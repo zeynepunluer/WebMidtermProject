@@ -1,0 +1,240 @@
+body,
+h1,
+h2,
+p{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x:hidden;
+   
+}
+
+
+header {
+    background-color: #3A4D39; 
+    color: #fff;
+    padding: 2%;
+    text-align: 40%;
+}
+
+header h1 {
+    background-image: url('./images/Screenshot_8-removebg-preview.png'); /* This is the style for bank icon image on the header */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    padding-left: 40%; 
+    margin: 0; 
+}
+
+
+
+
+.main-container{ /* Main container is where all elements are shown */
+    flex:1;
+    display:flex;
+    align-items: stretch;
+
+}
+
+
+.sidebar-left, 
+.sidebar-right{
+
+    width: 14%;               
+    background-color: #AEC3AE;
+    padding: 2%;
+    word-wrap: break-word; 
+  
+   
+}
+
+
+.sidebar-left{
+    order:-1; /*Placing left sidebar before main content*/
+}
+
+
+.sidebar-left :nth-child(1){ /*This is the style for the user icon since the first child of sidebar-left class is where the user icon placed*/
+    width: 100%;
+    
+}
+.icon-container{   /*Icon-container is like a box where all the icon images belongs except the user avatar*/
+                    /*I put icons in this icon-container so I can control their sizes*/
+    width: 50%;
+    text-align: center;
+}
+
+.icon-container img{  /*This is the style for icon images on the left sidebar except user avatar*/
+    width: 18%;
+    height: 18%;
+    margin-left: 57%;
+    margin-top: 40%;
+    margin-bottom: 10%;
+}
+
+.string-box{
+    background-color: #ddd; /*This is the box that I keep string values under the icon images. Like home, withdray etc.*/
+    width: 50%;
+}
+.exchange{
+    background-image: url("/images/daf2fa0e95df07f9deb667c80bf9e3e3.jpg"); 
+    background-size: cover;
+    margin-top: 10%;   /*This is the style the box that I keep exchange rates in.*/
+    margin-bottom: 2%;
+    padding: 10%;
+    text-align: center;
+    
+}
+
+
+.sidebar-left :nth-child(11){ /*This corresponds to "Rates" string on the left sidebar*/
+    margin-top: 50%;
+}
+
+
+
+.exchange strong{
+    color: white;
+    
+}
+
+
+.sidebar-left p{
+    text-align: center;
+}
+
+.sidebar-right .activity-box { /*This is the box that contains quick transfer boxes */
+    margin: 5%;
+    margin-top: 20%;
+    margin-bottom: 80%;
+}
+
+.sidebar-right .activity-box .box{
+    background-color: #739072;
+}
+.sidebar-right .string-box{ /*string-box re-settings for right sidebar*/
+    width:100%;             /*this is for the sub-boxes under the utility bills title*/
+    margin-bottom: 3%;
+}
+
+.message-form input[type="text"], /*This is the styling for the form section in the right side-bar*/
+.message-form input[type="email"],
+.message-form input[type="submit"],
+.message-form textarea {
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 3%;
+}
+
+main h1{
+    margin-top: 5%;
+    margin-bottom: 1%;
+
+}
+
+.card-container img{ /*I kept all the card images in the card-container*/
+    width: 30%;
+
+}
+
+.main-container > main{ /*This sets the style for the direct child (main) of main.container  */
+    flex: 1;
+    padding: 2%;
+
+}
+
+
+.box{
+    background-color: #9BBEC8; /*This is the box structure in the middle part of the page, Recent Activity part*/
+    margin-top: 1%;                 /*I used this styling in left-right sidebars also*/
+    margin-bottom: 2%;
+    padding: 4%;
+    text-align: center;
+}
+.activity-box{
+    width: 100%;
+    padding: 0;
+
+}
+
+.graphic-container{ /*This contains recent activity and total savings graphic next to it*/
+    display:flex; /*I set display: flex so I can place them next to each other in rows*/
+}
+.graphic-container img{ /*This is the total savings image settings*/
+    width: 50%;
+}
+.commercial-container{ /*This contains all the boxes in the bottom of the page*/
+    display:flex;      /*I set display:flex so I can place them side by side*/
+    height: 15%;
+    margin-bottom: 20%;
+    width: 100%;
+}
+.commercial-container .box{/*These are the extra settings for commercial boxes*/
+    margin: 2%;
+    width: 70%;
+    height: 100%;
+}
+.box1{
+    background-image: url("./images/6f112d706a75f23470bbcfcedfee3e20.png");
+    background-size:cover;   /*These boxes contains different images in the background*/
+}                            /*So I set three different box structure to put the images inside*/
+
+.box2{
+    background-image: url("./images/43a43188a31de091ab14798aa1948d4d.png");
+    background-size:cover;
+
+}
+.box3{
+    background-image: url("./images/b194f2616e08344c45403e7776c2e862.png");
+    background-size: cover;
+}
+
+
+
+footer {    /*This is the footer styling. I set position: relative so*/
+  position: relative; /*The footer part sticks to the very-bottom of the page*/
+  bottom: 0;
+  width: 100%;
+  background-color:#3A4D39;
+  color: #fff;
+  text-align: center;
+  padding: 3%;
+}
+.link-container{ /*I created a link-container and set display:flex*/
+    display:flex;   /*so I can style them in rows*/
+    justify-content: space-between;
+}
+.link-box{ /*This is the box structure in the link-container*/
+    flex-basis: 30%; /*These boxes placed side by side under favour of */
+}                    /*link-container2s flex structure, and link-boxes contents still are column wise*/  
+footer a{
+    color: white; /*Link styling*/
+    display: block;  /*I set display:block so every link is on the new line*/
+    }
+
+@media only screen and (max-width: 768px) { 
+
+    body {
+        font-size: 15px;   /*I set this media query so when the screen gets smaller than 768px (tablets),*/
+    }                       /*Font size becomes smaller so texts do not overflow*/
+}
+
+@media only screen and (max-width: 500px) { 
+
+    body {
+        font-size: 7px;   /*I set this media query so when the screen gets smaller than 500px(mobile devices),*/
+    }                       /*Font size becomes smaller so texts does not overflow*/
+
+    .message-form input[type="submit"]{
+        font-size: 7px;
+    }
+}

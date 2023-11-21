@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bank.css">
+    <title>Community Bank</title>
+</head>
+<body>
+    <header>
+        <h1>Community Bank</h1>    <!--This is the heading of the page-->
+    </header>
+    <div class="main-container">     <!--main-container has all the components that web page shows to the user-->
+        <div class="sidebar-left">  
+            
+            <img src="./images/avatar.png">     <!--this is the user icon on the top of the left sidebar-->
+            <p>Jo March</p>
+
+            <div class="icon-container">    <!--here I have icon-container. This container is like a box that keeps the icons except user icon-->
+                <img src="./images/home.png" alt="">    <!--This container helps to manage icon's sizes-->
+                
+            </div>
+            <div class="box">
+                <div class="string-box">    <!--This is box- inside box structure. Inside that, there is a text belongs to the icon above it-->
+                    <strong>Home</strong>   <!-- I made a frame styling with the box-inside box structure-->
+                </div>
+            </div>
+
+            <div class="icon-container">
+                <img src="./images/withdraw.png" alt="">
+                
+            </div>
+            <div class="box">
+                <div class="string-box">
+                    <strong>Withdraw</strong>
+                </div>
+            </div>
+            <div class="icon-container">
+                <img src="./images/deposit.png" alt="">
+                
+            </div>
+            <div class="box">
+                <div class="string-box">
+                    <strong>Deposit</strong>
+                </div>
+            </div>
+            <div class="icon-container">
+                <img src="./images/investment.png" alt="">
+                
+            </div>
+            <div class="box">
+                <div class="string-box">
+                    <strong>Investments</strong>
+                </div>
+            </div>
+            <div class="box">
+                <div class="string-box">
+                    <strong>Rates</strong>
+                </div>
+            </div>
+            <div class="exchange">
+                <strong> USD <em>28.682</em></strong><br>   <!--I keep the rates in this box. I gave a background image in css also-->
+                <strong> EURO <em>30.324</em></strong><br>
+                <strong> GBP <em>33.889</em></strong><br>
+                <strong> CHF <em>30.703</em></strong><br>
+                <strong> XAU <em>1741.205</em></strong><br>
+            </div>
+        </div>
+        <main>   <!--This is the middle part of the page-->
+            <div class="box">
+                <strong>Welcome to Community Bank, Jo! How can we help you today?</strong>  <!--This is the welcoming text to the page in a box at the top part-->
+            </div>
+            <h1>Cards</h1>
+            <div class="card-container">   <!--I created card-container to keep all the card images-->
+                <img src="./images/community card.png" alt="">
+                <img src="./images/bonus card.png" alt="" >
+                <img src="./images/extracard.png" alt="">
+            </div>
+
+            <h1>Recent Activity</h1>        <!--This section shows recent transactions that the bank account has-->
+            <div class="graphic-container">     <!--graphic-container holds recent activity contents and the total savings graphic next to it-->
+                <div class="activity-box">        <!--this is a box-inside box structure. Inside boxes keep transaction informations-->
+                    <div class="box">
+                        <strong> Goril Burger</strong>
+                        <p>-$50</p>
+                    </div>
+                    <div class="box">
+                        <strong> Amy March</strong>
+                        <p>+$200</p>
+                    </div>
+                    <div class="box">
+                        <strong> The Market</strong>
+                        <p>-$29.99</p>
+                    </div>
+                    <div class="box">
+                        <strong> Cafe</strong>
+                        <p>-$11.50</p>
+                    </div>
+                </div>
+                <img src="./images/total_savings.png" alt="">       <!--And this is the total savings graphic image next to the recent activity section-->
+            </div>                                                  <!--graphic-container sets display:flex so these two features are side by side-->
+
+            <h1>Don't Miss Out On The Benefits!</h1>     
+            <div class="commercial-container">
+                <div class="box box1">
+                    <strong>Earn bonuses while shopping!</strong>   <!--Here we have commercial-container that holds sub-boxes.-->
+                </div>                                              <!--Inside this boxes, there are announcements and campaigns for advertisement purposes-->
+                <div class="box box2">                              <!--I gave box1, box2 and box3 as extras because I wanted to give different backgrounds for each box-->
+                    <strong>Community Bank offers the best loan options!</strong>
+                </div>
+                <div class="box box3">
+                    <strong>Increase your savings with the e-saving account!</strong>
+                </div>
+                
+            </div>
+        </main>
+
+        <div class="sidebar-right">    
+
+            <strong>Quick Transfer</strong>   <!--This is the quick transfer part on the top of right sidebar-->
+            <div class="activity-box">         <!--Here we keep names that have most interaction with user's account so it is easier to send money-->
+                <div class="box">               
+                    <strong>Marmee</strong>      <!--I created box-inside box structure again because with this way -->
+                </div>                              <!--I can control outer box size and inside box features independently-->
+                <div class="box">
+                    <strong>Laurie</strong>                   
+                </div>
+                <div class="box">
+                    <strong> Amy March</strong>
+                </div>
+                <div class="box">
+                    <strong> Beth March</strong>
+                </div>                
+            </div>
+
+
+
+            <strong>Due Dates</strong>      <!--This is the part that shows upcoming payments for bills and other expenses-->
+            <div class="activity-box">         <!--this activity-box holds box and string-box inside box. it does not effect the looks. it helps to manage sizes of the area-->
+                <div class="box">      
+                    <strong>Utility Bills</strong>   <!--Here we have utility bills and under that we separate electric, water and gas bills independently-->
+                    <p>$214.03</p>                      <!--So there is a box inside another box. Outer box holds utility bills, inside utility bills there are seperate bills-->
+                    <div class="string-box">
+                        <strong> Electric Bill</strong>     <!--here I gave the inside boxes different color the sub-box structure is clearer-->
+                        <p>$58.64</p>
+                        <p>23.11.2023</p>
+                    </div>
+                    <div class="string-box">
+                        <strong> Water Bill</strong>
+                        <p>$39.57</p>
+                        <p>27.11.2023</p>
+                    </div>
+                    <div class="string-box">
+                        <strong> Gas Bill </strong>
+                        <p>$115.82</p>
+                        <p>26.11.2023</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <strong> Credit Card</strong>       <!--and at the bottom there is credit card payment that is the same level as utility bills inside outer box basically-->
+                    <p>$629.99</p>
+                </div>
+                <div class="box">
+                    <strong>Final Total: <em>$844.02</em></strong>       <!--and there is total payments amount -->
+                </div>                
+            </div>
+            
+            <strong>Send A Message</strong>         <!--Here I have form structure so the user can send messages-->
+            <div class="activity-box">      <!--I again keep it in activity-box so I can control the sizes.-->
+                <form action="#" method="POST" class="message-form">        <!--User enters name, email and their message then clicks on the submit button-->
+                    <label for="name">Name</label><br/>
+                    <input type="text" id="name" name="name"/> <br/>
+                    <label for="email">Email</label><br/>
+                    <input type="email" id="email" name="email"/> <br/>
+                    <label for="text">Your Message</label><br/>
+                    <textarea name="message" id="message"></textarea><br/>              
+                    <input type="submit" value="Submit">
+                </form>             
+            </div>
+        </div>
+
+    </div>
+    <footer>            <!--this is the footer which sticks to the downmost of the web page. we keep links here-->
+        <div class="link-container">          <!--Here we have a link-container. I created this container because I want to give column wise-->
+            <div class="link-box">      <!--and row wise links. I set link-container with display-flex-->
+                <a href="#">About Us</a>        <!--so link-boxes can place horizontally-->
+                <a href="#">Contact Us</a>      <!--And inside the link-boxes, there are links. these links placed vertically -->
+                <a href="#">Join Us</a>
+                <a href="#"> I Forgot My Password</a>
+           
+            </div>
+            <div class="link-box">
+                <a href="#">Download Community Bank Mobile App</a>
+                <a href="#">Community Bank Mobile & Internet Advantages</a>
+            </div>
+            <div class="link-box">
+                <a href="#">Multinational Banking</a>
+                <a href="#">Expat Banking</a>
+                <a href="#">Western Union</a>
+            </div>
+
+        </div>
+        
+    </footer>
+    
+</body>
+</html>
