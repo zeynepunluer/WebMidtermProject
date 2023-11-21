@@ -86,7 +86,7 @@ header h1 {
     width: 50%;
 }
 .exchange{
-    background-image: url("/images/daf2fa0e95df07f9deb667c80bf9e3e3.jpg"); 
+    background-image: url("./images/daf2fa0e95df07f9deb667c80bf9e3e3.jpg"); 
     background-size: cover;
     margin-top: 10%;   /*This is the style the box that I keep exchange rates in.*/
     margin-bottom: 2%;
